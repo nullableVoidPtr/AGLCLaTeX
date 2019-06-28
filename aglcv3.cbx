@@ -11,9 +11,9 @@
 	\label{cbx@\the\value{instcount}}%
 }
 
-\DeclareListFormat{last}{\ifthenelse{\value{listcount}=1}{#1}{}}
-\DeclareNameFormat{surname}{\ifthenelse{\value{listcount}=1}{#1}{}}
-\DeclareNameFormat{firstname}{\ifthenelse{\value{listcount}=1}{#3}{}}
+\DeclareListFormat{last}{\ifthenelse{\value{listcount}=1}{\namepartfamily}{}}
+\DeclareNameFormat{surname}{\ifthenelse{\value{listcount}=1}{\namepartfamily}{}}
+\DeclareNameFormat{firstname}{\ifthenelse{\value{listcount}=1}{\namepartgiven}{}}
 
 % for surnames
 
